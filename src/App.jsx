@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
-  return <div>context Api</div>;
+  const [data, setData] = useState("Cherry Byte Technology");
+  return (
+    <div>
+      <Header data={data} />
+    </div>
+  );
 }
 
 export default App;
